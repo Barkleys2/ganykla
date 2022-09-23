@@ -1,0 +1,83 @@
+@import "~bootstrap/scss/bootstrap";
+
+body,
+html {
+  font-family: "Arima", cursive;
+  background-color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+.row {
+  margin-top: 20px;
+}
+
+.card-header {
+  background-color: rgba(212, 212, 212, 0.637);
+}
+
+.card-body {
+  background-color: rgb(255, 255, 255);
+}
+
+.animal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  &_content {
+    display: block;
+    &_type {
+      font-size: 20px;
+      letter-spacing: 1px;
+      margin-right: 10px;
+      color: black
+    }
+    &_weight {
+      font-size: 20px;
+      color: black;
+      margin-right: 10px;
+    }
+  }
+  &_buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    button {
+      margin-left: 5px;
+      border: 1.5px solid black;
+    }
+  }
+}
+
+.card-body button {
+  border: 1.5px solid black;
+  background-color: white;
+  font-weight: 800;
+}
+
+
+
+.modal {
+  display: block;
+  background-color: #0000005f;
+  
+  &-header {
+    background-color: black;
+  }
+  &-footer {
+    background-color: black;
+  }
+}
+
+.msg-bin {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  .toast {
+    display: block;
+    margin: 10px;
+    background-color: black;
+    box-shadow: 10px 10px 25px 0px #3c3c3c;
+  }
+}
